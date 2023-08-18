@@ -1,0 +1,412 @@
+/* Css reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #5a5a5a;
+}
+img{
+    cursor: pointer;
+}
+
+/* Navbar Style */
+.flex-div{
+    display: flex;
+    align-items: center;
+
+}
+nav{
+    padding: 10px 2%; /*10px top bottom or 2% right left side*/
+    justify-content: space-between; /*ese kya hoga right or left ki beach equal space aayega*/
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  */
+    /*ese kya hoga ki humare box bn jaayege or neche line show hoge*/
+    background: #fff; /*Bg color deya hai apne navbar ko*/
+    position: sticky; /*jise ek jgha fix rhe*/
+    top: 0; /*kha pr sticky rhe top mein rhe*/
+    z-index: 10;
+
+}
+/* .nav-left img{
+    height: 50px;
+} */
+/* nav-left ki yha se start hai style. */
+.nav-left .menu-icon{  /*menu bar jo hai uske style ki hai.*/
+    width: 35px;
+    margin-right: 25px; /*Ese kya hoga jo humare menu bar hai na uske right side se space hojayega to logo se thoda acha lgega*/
+}
+.nav-left .logo{ /*logo ki leye style ki hai.*/
+    width: 130px;
+}
+/*nav-center yha se start hai style  */
+.nav-center .mic-icon{ /*Jo voice mic hai uske style ki hai.*/
+    width: 25px;
+}
+.nav-center .mic-icon:hover{ /*fr ese mic icon mein hover effect deya hai.*/
+    background: #ccc;
+    border-radius: 50px;
+}
+.nav-center .search-box{ /*Search box ki leye style kra hai*/
+    border: 1px solid #ccc; /*Ese jo border hai wo aaya hai or uska color deya hai border ka.*/
+    margin-right: 10px; /*ese kya hoga jo voice mic hai usse thoda side hogya hai ye margin dene se.*/
+    padding: 8px 12px; /*8px top and bottom 12px right and left side*/
+    border-radius: 45px; 
+}
+.nav-center .search-box input{ /*jo search box mein jo input hai usko style kra hai.*/
+    width: 400px; /*uske width set ki hai ki kitna bada aaye jo search ki line hai.*/
+    border: 0; /*fr us search mein border aarha tha to usko cut kra hai.*/
+    outline: 0; /*jo outline aarhe the search pr click krne pr wo nhi aayege ab*/
+    background: transparent; /*backrground transparent kra hai.*/
+}
+.nav-center .search-box img{ /*jo image hai search icon ki usko style krege.*/
+    width: 15px;
+}
+/*nav-right ki yha se start hai style. */
+.nav-right img{ /*jo image hai right side unko style kra hai.*/
+    width: 25px; /*jo right mein icon hai sbki width set ki hai.*/
+    margin-right: 25px;  /*Ese kya hoga jo humare icon hai unme marigin aayege right se*/
+}
+.nav-right .user-icon{
+    border-radius: 50px;
+    margin-right: 0; /*Ab ese kya hua jo humare margin aarhe the wo zero ki hai.*/
+}
+
+
+
+/* SideBar Style */
+.sidebar{ /*Pure side bar ko hi style kiya*/
+    background: #fff; /*Ese kya hoga jo humara side bar hai usko bg color deya*/
+    width: 15%; /*fr sidebar ki width set ki*/
+    height: 100vh; /*fr uske height set ki*/
+    position: fixed; /*fr uske position set ki*/
+    top: 0; /*or kha rhe postion wo top rhe ye btaya*/
+    padding-left: 2.3%; /*fr left se padding de*/
+    padding-top: 80px; /*fr top se de */
+}
+.shortcut-links a img{ /*jo anchor tag hai uske under jo image hai unko set kra.*/
+    width: 17px; /*ye jo image hai usko width de*/
+    margin-right: 20px; /*fr jo image hai usko margin right esliye de jise jo home etc lekhe hue hai wo side se space aaye*/
+}
+.shortcut-links a{ /*fr jo anchor tag hai usko hi style kra hai*/
+    display: flex; /*kyu ki jo humare anchor tag ki under jo itmes the wo ulta sedha aarhe the*/
+    align-items: center; /*fr un items ko center kra*/
+    margin-bottom: 20px; /*fr neche se unme margin de*/
+    width: fit-content; /*fr uske width de*/
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+/* .shortcut-links a:hover{
+    background-color: #ccc;
+    border-radius: 10px;
+} */
+.sidebar hr{ /*jo line humne sidebaar mein de hai uske leye style kra hai.*/
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    width: 85%;
+    margin-bottom: 10px;
+}
+.subscribed-list h3{ /*fr us line ki neche humne ek heading bnaye hai usko kiya hai style.*/
+    font-size: 15px;
+    margin: 10px 0; /*20px top and bottom or left right 0*/
+    color: #5a5a5a;
+}
+.subscribed-list a{ /*fr uske under kuch anchor tag ka use kra hai unko style kra hai.*/
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+.subscribed-list a img{ /*fr uske under jo image de hai unko style kra hai.*/
+    width: 17px;
+    /* border-radius: 50%; */
+    margin-right: 20px;
+}
+
+
+/* Ab hum us class name ko style krege jo humne JS file mein de hai. */
+/*Hum ye style dege ki agar hum menuIcon pr click kre to kya function work kre or wo function bnaya hai humne js file mein*/
+.small-sidebar{
+    /* width: 5%; */
+    display: none;
+}
+
+
+/* main section ki leye style */
+.container{ /*Humne jo container hai uske style ki hai*/
+    background: #f9f9f9; /*container ko bg color deya hai*/
+    padding-left: 17%; 
+    padding-right: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/*ye vhe class hai jo humne js file mein de hai container ki leye function lekha hai or ye vha krege work.*/
+.large-container{
+    padding-left: 7%;
+}
+.banner img{ /*us banner ki under jo image hai uske width or radius deya hai*/
+    width: 100%;
+    border-radius: 8px;
+}
+/* main section ki under jo list container hai uske leye style */
+.list-container{ /*fr jo list-container hai usko grid bnaya hai to vhe property use ki hai neche.*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-column-gap:16px ;
+    grid-row-gap: 30px;
+    margin-top: 15px;
+}
+.vid-list .thumbnail{ /*fr jo image de hai thumbail name ki but unki sbki class thumbnail hai to unko style kra hai.*/
+    width: 100%;
+    border-radius: 10px;
+}
+.vid-list .flex-div{ /*fr flex-div mein jo logo image or lekha hua hai unko style kra hai. */
+    align-items: flex-start; /*ese kya hoga start mein aayega*/
+    margin-top: 7px; /*margin de hai top se jo lekha hua hai wo thumbnail image se thoda neche hoge ese.*/
+}
+.vid-list .flex-div img{ /*fr jo logo hai unko style kra hai.*/
+    width: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.vid-info{ /*fr jo lekha hua hai videos ki baari mein ki kiske hai or kya hai etc usko font deya hai.*/
+    font-size: 13px;
+}
+.vid-info a{ /*jo anchor tag mein videos ki baari mein lekha hua hai uske style kra hai.*/
+    color: black;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Media query ka use kra hai.main page ki leye. */
+@media (max-width:985px){
+    .menu-icon{/*jo wo menu icon tha jis pr click krne pr sidebar aata tha ya chla jaata tha usko none kiya hai menu-icon ko*/
+        display: none;
+    }
+    .sidebar{ /*sidebar ko hi none kr deya*/
+        display: none;
+    }
+    .container, .large-container{/*jo wo sidebar chle jaane pr width the wo jada hojate the wo class bnaye the JS mein usko
+                                    ab ye kr rhe hai ki ye jada hi rhe. kyu sidebar to none hai ab.*/
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .nav-right img{ /*Jo navbar mein right mein image aarhe the usko bhi none kr deya hai*/
+        display: none;
+    }
+    .nav-right .user-icon{ /*jo navbar mein right side jo wo pic the user ki uski width set ki hai ki kaise show ho*/
+        display: block;
+        width: 30px;
+    }
+    .nav-center .search-box input{ /*jo navbar mein search box the usko jo input tag hai usko use kr ki width de hai*/
+        width: 100px;
+    }
+    .nav-center .mic-icon{ /*jo wo mic the searchbox ki side mein usko none kr deya*/
+        display: none;
+    } 
+    .logo{ /*navbar ki logo ko bhi set kra hai.*/
+        width: 90px;
+    }
+}
+
+
+
+
+/* Jo second page bnaya hai videos ki leye uske under jo container hai uske leye style krege neche dekhe. */
+.play-container{ /*jo play-container hai usko puri ko left side padding de hai jise wo thek se rhe.*/
+    padding-left: 2%;
+}
+.row{ /*fr play-container ki under humne row bnaye hai jiske under 2 colum rhege ek mein video rhege or ek mein sidebar.
+        to usko style kra hai display flex etc kra hai.*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.play-video{ /*jo row ki under jo first colum hai video vaala  uske class hai ye to style kra hai.*/
+    flex-basis: 69%; /*hum ye bol rhe hai ki row ki puri width ka 69 percent part video vaala colum lele.*/
+}
+.right-sidebar{ /*jo row ki under jo second colum hai sidebar vaala uske class hai ye to style kra hai.*/
+    flex-basis: 30%; /*ye bol rhe hai ki row ki puri width ka 30 percent part tum lele sidebar or jo bacha one percent wo
+                    dono colum ki beach space ka kaam krega. */
+}
+.play-video video{ /*jo ye hai jo first colum hai video vaala uske class ki under ye video name ka tag hai.*/
+    width: 100%; /*ese video ki width set hoge */
+}
+.side-video-list{ /*jo dusre colum hai right sidebar vaala uske under ye class use kre hai usko style kra hai.*/
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.side-video-list img{ /*fr us right side bar mein jo image hai thumbnail vaale unko style kra hai.*/
+    width: 95%; /*us thumbnail image ki width set ki hai.*/
+    border-radius: 10px;
+}
+.side-video-list .small-thumbnail{ /*ye jo small-thumbnail hai ye image ki class hai usko style kr rhe hai*/
+    flex-basis: 49%; /*hum ye bol rhe hai jo humara colum tha 2nd vaala sidebar ka jisko puri 100percent width ka 
+                        39 percent deya tha to es 2nd colum ki leye to ab ye 100percent hai ek trha se to hum eske under
+                        2 cheje de rhe hai ek to image thumbnail or dusra uske information to esme hum ye bol rhe hai ki
+                        us 39percent ka 49percent part mein to thumbnail image rhege or neche dekhe 49 percent mein 
+                        video ki information rhege or jo 2 percent rhega wo dono ki beach space rhega.*/
+}
+.side-video-list .vid-info{ /*ye vhe hai 49% deya hai uska bacha hua.*/
+    flex-basis: 49%;
+}
+.tags .play-video-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #5a5a5a;
+}
+.tags .play-video-info a img{
+    width: 20px;
+    margin-right: 8px;
+}
+.tags .play-video-info a{
+    display: inline-flex;
+    align-items: center;
+    margin-left: 15px;
+}
+.tags hr{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 10px 0;
+}
+.tags .publisher{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.tags .publisher:hover{
+    background-color: #ccc;
+}
+.tags .publisher div{
+    flex: 1;
+    line-height: 18px;
+}
+.tags .publisher img{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px; 
+}
+.tags .publisher div p{
+    font-size: 15px;
+    font-weight: 600;
+}
+.tags .publisher div span{
+    font-size: 10px;
+}
+/* .tags .publisher button{
+    margin-right: 50px;
+    background: black;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+} */
+.tags .publisher button{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    /* font-size: 16px; */
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.tags h4{
+    font-size: 14px;
+    padding-top: 10px;
+}
+.tags .add-comment{
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+.tags .add-comment img{
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.tags .add-comment input{
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    padding-top: 10px;
+    background: transparent;
+}
+.tags .old-comment{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.tags .old-comment img{
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.tags .old-comment h3{
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+.tags .old-comment h3 span{
+    font-size: 10px;
+    color: #5a5a5a;
+    font-weight: 500;
+    margin-left: 8px;
+}
+.tags .old-comment p{
+    font-size: 12px;
+    padding-top: 5px;
+}
+.tags .comment-action{
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    font-size: 12px;
+}
+.tags .comment-action img{
+    width: 20px;
+    margin-right: 5px;
+}
+.tags .comment-action span{
+    margin-right: 20px;
+    color: #5a5a5a;
+}
+.tags .comment-action a{
+    color: blue;
+}
+
+
+/* media query */
+@media (max-width:900px){
+    .play-video{
+        flex-basis: 100%;
+    }
+    .right-sidebar{
+        flex-basis: 100%;
+    }
+    .play-container{
+        padding-left: 5%;
+        margin-right: 5%;
+    }
+    .tags .play-video-info a{
+        margin-left: 0;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+}

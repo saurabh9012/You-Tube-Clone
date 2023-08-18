@@ -1,0 +1,201 @@
+<!-- Ab hum kya krege ye page bna rhe hai esliye ki jo humare jaise maine page pr video thumbnail show ho rhe hai to 
+es pr click kre to video on hojaye ye sb ki leye kr rhe hai to uske under ek to hume navbar chaye to usko leye aaye.neche
+dekhe or jo bhi chaye wo sb laayege.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Video</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+            <!-- Navbar Start -->
+            <nav class="flex-div">
+                <!-- Hum Esme 3 div bnayege nav-left or nav-center or nav-right -->
+                <!-- Es div mein hum logo or menu baar de rhe hai. -->
+                <div class="nav-left flex-div"> <!--yha pr flex-div ka use krne se humare es div mein or neche bhi div mein 
+                                                flex property use hogye vrna fr sb jgha use krne pdte ab yhe vaale sbme work 
+                                                kr jaayege.-->
+                    <img class="menu-icon" src="image/menu.png" alt="">
+                    <img class="logo" src="image/logo.png" alt="">
+                </div>
+                <!-- Es div mein search box or voice icon ko de rhe hai. -->
+                <div class="nav-center flex-div">
+                    <div class="search-box flex-div">
+                        <input type="text" placeholder="Search">
+                        <img src="image/search.png" alt="">
+                    </div>
+                    <img class="mic-icon" src="image/voice-search.png" alt="">
+                </div>
+                <!-- Es div mein icon use kr rhe hai right vaale -->
+                <div class="nav-right flex-div">
+                    <img src="image/upload.png" alt="">
+                    <img src="image/more.png" alt="">
+                    <img src="image/notification.png" alt="">
+                    <img class="user-icon" src="image/sunny.jpg" alt="">
+                </div>
+            </nav>
+            <!-- Navbar End -->
+            
+
+            <!-- Ab hum ek div or bnayege container name se  -->
+            <div class="conatiner play-container">
+                <!-- Ab hum ek row bnayege or uske under colum hoge ek mein video hoge or chanel information or comment
+                hoge or ek mein list hoge video ki suggest video ki. Neche dekhe. -->
+                <div class="row">
+                    <!-- ye 1st colum hai jisme video aarhe hai. -->
+                    <div class="play-video">
+                        <video controls autoplay>
+                            <source src="image/video.mp4.mp4" type="video/mp4">
+                        </video>
+                        <div class="tags">
+                            <div class="vid-info">
+                                <h3>Darshan Raval - Piya Re | Offical video | New Song 2023</h3>
+                                <p>India Music Label</p>
+                            </div>
+                            <div class="play-video-info">
+                                <p>16M views &bull; 5 months ago</p>
+                                <div>
+                                    <a href=""><img src="image/like.png" alt="">1.3M</a>
+                                    <a href=""><img src="image/dislike.png" alt=""></a>
+                                    <a href=""><img src="image/share.png" alt="">Share</a>
+                                    <a href=""><img src="image/save.png" alt="">Save</a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="publisher">
+                                <img src="image/darshanlogoimage.png" alt="">
+                                <div>
+                                    <p>DarshanRavalIDZ</p>
+                                    <span>3.68M Subscribers</span>
+                                </div>
+                                <button type="button">Subscribe</button>
+                            </div>
+                            <h4>25389 Comments</h4>
+                            <div class="add-comment">
+                                <img src="image/sunny.jpg" alt="">
+                                <input type="text" placeholder="Add a comment...">
+                            </div>
+                            <div class="old-comment">
+                                <img src="image/comment1.jpg" alt="">
+                                <div>
+                                    <h3>@sejal <span>1 year ago</span></h3> 
+                                    <p>TU MILEYA is not just a song it's an Emotion</p>   
+                                    <div class="comment-action">
+                                        <img src="image/like.png" alt="">
+                                        <span>731</span>
+                                        <img src="image/dislike.png" alt="">
+                                        <span>Reply</span>
+                                        <a href="">All replies</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="old-comment">
+                                <img src="image/comment2.jpg" alt="">
+                                <div>
+                                    <h3>@pragatiVerma <span>1 month ago(edited)</span></h3> 
+                                    <p>I love this song</p> 
+                                    <div class="comment-action">
+                                        <img src="image/like.png" alt="">
+                                        <span>235</span>
+                                        <img src="image/dislike.png" alt="">
+                                        <span>Reply</span>
+                                        <a href="">All replies</a>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="old-comment">
+                                <img src="image/comment3.jpg" alt="">
+                                <div>
+                                    <h3>@ayushiChauhan <span>1 year ago</span></h3> 
+                                    <p>Tu Mileya is not just a song... It's an emotion</p> 
+                                    <div class="comment-action">
+                                        <img src="image/like.png" alt="">
+                                        <span>125</span>
+                                        <img src="image/dislike.png" alt="">
+                                        <span>Reply</span>
+                                        <a href="">All replies</a>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="old-comment">
+                                <img src="image/comment4.jpg" alt="">
+                                <div>
+                                    <h3>@vishakha.5237 <span>6 months ago(edited)</span></h3> 
+                                    <p>This song in his pure voice at concerts are just heaven</p>  
+                                    <div class="comment-action">
+                                        <img src="image/like.png" alt="">
+                                        <span>8</span>
+                                        <img src="image/dislike.png" alt="">
+                                        <span>Reply</span>
+                                        <a href="">All replies</a>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- yha 2nd column hai jo side mein sidebar aarha hai jiske under suggest videos hai. -->
+                    <div class="right-sidebar">
+                        <div class="side-video-list">
+                            <a href=""><img class="small-thumbnail" src="image/thumbnail2.jpg" alt=""></a>
+                            <div class="vid-info">
+                                <a href="">Darshan Raval - Piya Re | Offical video | New Song 2023</a>
+                                <p>India Music Label</p>
+                                <p>16M views &bull; 5 months ago</p>
+                            </div>
+                        </div>
+                        <div class="side-video-list">
+                            <a href=""><img class="small-thumbnail" src="image/thumbnail3.jpg" alt=""></a>
+                            <div class="vid-info">
+                                <a href="">Some Amazing Python Programming - The Power of Python | Python Tutorial - Day #1</a>
+                                <p>CodeWithHarry</p>
+                                <p>2.6M views &bull; 8 months ago</p>
+                            </div>
+                        </div>
+                        <div class="side-video-list">
+                            <a href=""><img class="small-thumbnail" src="image/thumbnail4.jpg" alt=""></a>
+                            <div class="vid-info">
+                                <a href="">React Js Tutorial in Hindi | Complete React Course in Hindi - Day #1</a>
+                                <p>CodeWithHarry</p>
+                                <p>2M views &bull; 1 year ago</p>
+                            </div>
+                        </div>
+                        <div class="side-video-list">
+                            <a href=""><img class="small-thumbnail" src="image/thumbnail5.jpg" alt=""></a>
+                            <div class="vid-info">
+                                <a href="">JavaScript Tutorial for Beginners | JavaScript Tutorial in Hindi - Day #1</a>
+                                <p>CodeWithHarry</p>
+                                <p>2.6M views &bull; 1 year ago</p>
+                            </div>
+                        </div>
+                        <div class="side-video-list">
+                            <a href=""><img class="small-thumbnail" src="image/thumbnail6.jpg" alt=""></a>
+                            <div class="vid-info">
+                                <a href="">Badshah - Paagal | Offical video | Hit Song</a>
+                                <p>Sony Music India</p>
+                                <p>360M views &bull; 4 years ago</p>
+                            </div>
+                        </div>
+                        <div class="side-video-list">
+                            <a href=""><img class="small-thumbnail" src="image/thumbnail7.jpg" alt=""></a>
+                            <div class="vid-info">
+                                <a href="">Badshah - Sab Gazab | Offical video | New Hit Song</a>
+                                <p>India Music Label</p>
+                                <p>30M views &bull; 3 months ago</p>
+                            </div>
+                        </div>
+                        <div class="side-video-list">
+                            <a href=""><img class="small-thumbnail" src="image/thumbnail8.jpg" alt=""></a>
+                            <div class="vid-info">
+                                <a href="">Honey Singh - Jingle Bell | Yo Yo Honey Singh (Offical video) | Hit Song</a>
+                                <p>India Music Label</p>
+                                <p>141M views &bull; 2 years ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+</html>
